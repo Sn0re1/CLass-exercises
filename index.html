@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <input type="number" id="baggage-weight">
-    <button onclick="check baggage-weight()">check weight</button>
-</body>
 <script>
-    weight =parseInt(weight);
-    console.log
-    if (weight <= 15){
-        console.log
-    alert("Your baggage is within the limit i.e.  kg.");
+    const limit= 15;
+
+console.log('Baggage weight is: '+ limit +'kg');
+if(limit<=15){
+console.log('Allowed Baggage weight limit is allowed');
 }
-else (weight >= 15){
-    console.log
-    alert("Your baggage is exceeding the allowed limit i.e. kg.");
+else{
+console.log('Baggage weight limit is overweight');
 }
- var weight = document.getElementById("baggage-weight").value;
+
+
 </script>
+<body>
+    
+</body>
 </html>
