@@ -177,8 +177,8 @@
     <input type="number" id="b">
     <label>write a value for "b"</label>
     <br>
-    <input type="number" id="l">
-    <label>write multiple values for "l" includinig comma(,)</label>
+    <input type="text" id="l">
+    <label>write multiple values for "l" including comma(,)</label>
     <button onclick="f4()">Press me!</button>
 
     <script>
@@ -186,19 +186,23 @@
         function f4() {
             let a = parseInt(document.getElementById("a").value);
             let b = parseInt(document.getElementById("b").value);
-            let l = parseInt(document.getElementById("l").value).split(',');
+            let l = (document.getElementById("l").value.split(","));
 
             let sum = 0
-            for (i = 0; i < l; i++) {
-                if (i % a === 0 || i % b === 0) {
-                    sum = sum + i
-                }
-                alert(sum);
+            for (let i = 0; i < l.length; i++) {
+                let l1 = parseInt(l[i].trim());
+
+
+
+                sum = sum + l1
             }
-
-
-
+            alert(sum);
         }
+        
+
+
+
+
     </script>
 </body>
 
