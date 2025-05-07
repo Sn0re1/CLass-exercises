@@ -161,8 +161,7 @@
 
 
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -192,10 +191,16 @@
             let sum = 0
             for (let i = 0; i < l.length; i++) {
                 let l1 = parseInt(l[i].trim());
+               
+                if(l1%a==0 || l1%b==0){
+                    sum = sum + l1
+                    
+                }
 
 
 
-                sum = sum + l1
+
+                
             }
             alert(sum);
         }
