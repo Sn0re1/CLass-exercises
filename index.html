@@ -160,7 +160,7 @@
 </html> -->
 
 
-
+<!-- 
 <html>
 
 <head>
@@ -212,4 +212,55 @@
     </script>
 </body>
 
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Exercise 7</p>
+     <script>
+
+        function ex(basket, price) {
+            let sum = 0;
+
+            for (let i in basket) {
+                sum += basket[i] * price[i];
+
+            }
+
+            return sum;
+
+
+        }
+
+
+
+
+        function hander_click() {
+            //basket items are written below
+            let basket = {
+                milk: 1,
+                eggs: 4,
+                bread: 2
+            }
+            //prices of each items are written below
+            let price = {
+                milk: 3.55,
+                eggs: .90,
+                bread: 1,
+
+            }
+
+            let answer = ex(basket, price);
+            alert("Your total is " + answer);
+
+        }
+
+    </script>
+    <button onclick="hander_click()">Submit</button>
+</body>
 </html>
